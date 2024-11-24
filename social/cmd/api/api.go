@@ -20,7 +20,7 @@ func (app *application) run() error {
 		Addr:    app.config.addr,
 		Handler: mux,
 	}
-	log.Printf("server has started at %s", app.config.addr)
+	log.Printf("server has started at %s.", app.config.addr)
 
 	return srv.ListenAndServe()
 }
